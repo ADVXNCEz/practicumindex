@@ -4,9 +4,9 @@
     Hi
   </body>
 
-    <ul>
+   <ul>
       {% for item in news_items %}
-        <li>{{ item.title }}</li>
+        <li><a href="/news/{{ item.id }}/">{{ item.title }}</a></li>
       {% endfor %}
     </ul>
 
