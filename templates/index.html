@@ -7,9 +7,12 @@
     Hi. This is {{ time }}.  This is recent news.
     <ul id="main_news_list">
       {% for item in news_items %}
-        <li class="news-items" id="news_item_{{ item.id }}">
-          <a href="{{ url_for('show_news_item', id=item.id) }}">{{ item.title }}</a>
+      <li class="news-items {% if item.id == 3 %}highlight{% endif %}"id="news_item_{{ item.id }}">
+      <a href="{{ url_for('show_news_item', id=item.id) }}">
+        {{ item.title }}
+      </a>
         </li>
+
       {% endfor %}
     </ul> 
 

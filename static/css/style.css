@@ -11,3 +11,6 @@
   color: red;
 }
 
+#main_news_list .news-items.highlight {
+  background-color: green;
+}
